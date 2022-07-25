@@ -1,0 +1,25 @@
+java script lab 6 - 10 mins 
+
+ for the below given array ,calculate and display sum of all the values in an array 
+
+ var arr=[12,11,19,15,16,17,22]
+
+
+
+
+javascript lab 7 
+
+  create an html page with an empty div tag and provide below functionalities 
+ using document object 
+
+ 1.There should be a button with text ,say hello 
+ 2.When user clicks in button the div area should display a message 
+
+  Hello User
+
+ 3.apply style backgroundColor,height and width using document object
+
+
+
+
+

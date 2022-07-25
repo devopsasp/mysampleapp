@@ -1,0 +1,40 @@
+  <!DOCTYPE HTML>
+   <HTML>
+   <HEAD>
+    <SCRIPT>
+  var xmldoc="<Product><Products pid='1'><ProductName>Black Coffee</ProductName><Description> &quot; Black coffee with cream &quot; </Description><Price>20</Price><Quantity>10</Quantity><DiscountAllowed> &gt;200</DiscountAllowed></Products><Products pid='2'><ProductName>Espresso</ProductName><Description> &quot; Espresso with cream &quot; &amp; cookies and</Description><Price>24</Price><Quantity>9</Quantity><DiscountAllowed> &lt; 400 </DiscountAllowed></Products></Product>"
+    
+  function loadxml() 
+ {
+    if  (window.DOMParser) 
+ { 
+  parser=new DOMParser()
+  var myparseddoc=parser.parseFromString(xmldoc,"text/xml")
+  console.log(myparseddoc)
+  var mynodes=myparseddoc.documentElement.childNodes;
+  for(i=0;i<mynodes.length;i++) 
+ { 
+   document.write(mynodes[i].childNodes[0].childNodes[0].nodeValue);
+document.write(mynodes[i].childNodes[1].childNodes[0].nodeValue);
+document.write(mynodes[i].childNodes[2].childNodes[0].nodeValue);
+document.write(mynodes[i].childNodes[3].childNodes[0].nodeValue);
+  console.log(mynodes[i].childNodes[0].childNodes[0].nodeValue)
+   document.write("<br/>")
+ } 
+ }
+
+var res=myparseddoc.evaluate("/Products/Product/ProductName",myparseddoc,null,XPathResult.ANY_TYPE,null)
+var nnode=res.iterateNext()
+while (nnode) {
+            txt += nnode.childNodes[0].nodeValue + "<br>";
+            result = res.iterateNext();
+   document.write(txt)
+        } 
+    
+  }
+
+ loadxml()
+
+    </SCRIPT>
+   </HEAD>
+   </HTML>

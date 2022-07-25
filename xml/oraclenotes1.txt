@@ -1,0 +1,44 @@
+    condition for where clause 
+
+     =
+     >
+     <
+     >=
+     <=
+      between
+     in
+     not in 
+
+    Like 
+          %
+          _
+
+     pet%r
+
+
+
+
+group by and aggregate functions 
+
+
+   sum
+   avg
+   max
+   min
+   count
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

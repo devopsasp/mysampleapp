@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<HTML onclick="jumphero()">
+   <HEAD>
+  <STYLE>
+     .drawarea
+  {
+   width:1200px;
+   height:400px;
+   border:solid 1px;
+   position:absolute;    
+background-image:url("background.jpg");
+     
+
+     }
+#hero
+ { 
+    width:130px;
+    height:195px;
+      position:relative;
+    top:200px;
+    left:60px;
+    background-image:url("hero.jpg");
+    background-repeat:no-repeat;
+   
+   
+ }
+
+
+#boulder
+ { 
+    width:50px;
+    height:30px;
+      position:relative;
+    top:150px;
+   left:1000px;
+    background-color:red;
+  animation: moveboulder 2s infinite ; 
+  border-radius:80px;
+  background-image:url("fire.jpg");
+    background-repeat:no-repeat;
+   
+   
+ } 
+
+#dragon
+{
+width:240px;
+    height:300px;
+      position:relative;
+    top:0px;
+   left:960px;
+  
+  background-image:url("dragon.jpg");
+    background-repeat:no-repeat;
+      
+}
+ 
+   .makejump
+ { 
+ animation: jump 1s 
+ } 
+
+
+@keyframes jump
+{
+0% {top:200px;}
+ 
+50%  {top:10px;}
+
+100% {top:200px;}
+
+}
+
+
+@keyframes moveboulder
+{
+0% {left:1000px;}
+ 
+100%  {left:10px;}
+
+
+}
+
+
+
+@keyframes walk
+{
+0%  {left:0px;}
+50% {left:30px;}
+100% {left:60px;}
+
+}
+
+
+
+
+  </STYLE>
+
+ <script>
+ 
+</script>
+
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+<META HTTP-Equiv="ScreenOrientation" Content="RightHanded">
+  </HEAD>
+   <body>
+
+  <progress value="30" id="pos" max="30" min="0"> </progress>
+<div id="mytime"></div>
+ 
+  <div  class="drawarea" id="drawarea">
+   <div class="hero" id="hero">
+   </div>
+  
+  <div id="boulder">
+   </div>
+
+  <div id="dragon">
+  </div>
+  
+  </div>
+
+
+ <SCRIPT>
+  
+ function jumphero()
+{
+   var obj=document.getElementById("hero");
+   
+    obj.classList.add("makejump");
+
+ var audio=new Audio("jump.wav");
+audio.play();
+audio.loop=false;
+
+   setTimeout(function(){
+
+obj.classList.remove("makejump");
+
+  
+},1800);
+
+
+
+}
+
+var tdiv=document.getElementById("mytime")
+var counter=0;
+var strength=30;
+var millisec=0
+var mytimer=setInterval(function(){
+millisec++;
+tdiv.innerHTML="seconds survived "+millisec;
+var posdiv1=document.getElementById("pos");
+var da=document.getElementById("drawarea");
+if(posdiv1.value==0)
+ {  
+
+ clearInterval(mytimer);
+var scraudio=new Audio("score.wav");
+scraudio.play()
+scraudio.loop=false;
+if(millisec<=30)
+ {
+ da.innerHTML="You survived for "+millisec+" seconds !<br/>You are a novice!get more practice"
+ }else if(millisec>30 && millisec <=50) 
+ { 
+da.innerHTML="You survived for "+millisec+" seconds !<br/>Looks like you understood the game"
+
+ } else if(millisec>50 && millisec<=70)
+{
+da.innerHTML="You survived for "+millisec+" seconds !<br/>Well Done!You are now a Champ"
+
+}
+else if(millisec>70)
+ { 
+ da.innerHTML="Master of the game!!My Blessings!"
+
+
+
+ }
+  
+ da.style.fontSize="50px";
+ da.style.color="red";
+ da.style.textShadow="2px 2px green";
+ } 
+
+},1000)
+
+var checkjump=setInterval(function(){
+
+var posdiv=document.getElementById("pos");
+var heropos=parseInt(window.getComputedStyle(hero).getPropertyValue("top"))
+var blockpos=parseInt(window.getComputedStyle(boulder).getPropertyValue("left"))
+
+if(blockpos<20 && blockpos>17 && heropos > 170)
+ { 
+console.log("hit")
+ var audio=new Audio("hit.wav");
+audio.play();
+audio.loop=false;
+
+posdiv.value=strength-++counter;
+if(posdiv.value==0) 
+ {
+//alert(posdiv.value);
+var b=document.getElementById("boulder");
+b.style.animation="none";
+b.style.display="none";
+stopgame();    
+ }
+ } 
+},10)
+
+
+
+
+
+</SCRIPT>
+
+
+   </body>
+ 
+</HTML>

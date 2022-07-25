@@ -1,0 +1,19 @@
+   Frames 
+
+
+  #Frames are used to divide document into multiple sections ,where each section can
+ contain an individual page 
+   #A collection of frames is called a frameset 
+   #Using frames document window can be divided into rows and columns and organized 
+ in similar way the tables are organized
+  #In HTML5 frames are created using iframes
+  #iframe stands for inline frame 
+
+    attributes of iframe 
+        width
+        height
+        src
+        style
+
+
+ The pages in iframe can be changed using target attribute of an external hyperlink

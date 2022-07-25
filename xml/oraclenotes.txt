@@ -1,0 +1,256 @@
+   Oracle Functions
+  Single row functions in oracle return a single result row for every row for queried table
+
+   Numeric Functions 
+   Character Functions 
+   DateTime Functions 
+   Conversion Functions
+
+
+
+ Numeric Functions 
+  #These are functions that operate on numeric value.They accept a numeric input and return numeir values 
+ 
+    ABS
+    CEIL
+    FLOOR
+    POWER
+    ROUND
+
+
+
+  *dual table in database is like a dummy table to test functions and other ops
+
+
+
+  Character Functions 
+
+  CHR :- accepts a numeric value and returns character equivalent
+  CONCAT:- it is used to concatenate two values
+  InitCap:-Used provide text with first character of each word as capital
+ Lower
+  Upper
+   Ltrim 
+   Rtrim
+   Trim
+   Lpad
+   RPad
+   Replace
+   Length
+   substr
+
+
+   Date Functions 
+  
+
+
+
+
+  SQL Lab 9 
+
+     1.Write a query to print department names in upper case  from departments table 
+     2.write a query to print min_salary rounded to 2 digits from jobs table 
+     4.write a query to print only first three letters of department_name using substr function 
+     5.from job history get the last_day of month from end_date column
+     6.Use LPad with min_salary in jobs table to print min_salary for 7 digits.For 
+ remaining spaces use % character
+
+
+
+
+
+ conversion functions 
+
+   varchar
+   number
+   date
+
+
+   char<----------number---------->char<---------->date
+
+
+
+ To_Char(character),To_Char(datetime),To_Char(number)
+ To_Number
+ To_Date
+
+
+  To_Char
+   Number formatting symbols 
+    L currency
+    , for comma seperator
+    . for decimal representation 
+    RN for roman numeral
+    C Currency Text
+
+
+
+
+ Date Formats 
+  MM numeric month
+  MON Abbreviated month
+  MONTH full month name
+  DD Day od month
+  Dy Abbreviated name of Day 
+  YYYY 4 digit year  
+  YY Last two digit of year
+  RR Like YY,but the two digits are rounded to a year in the range of 1950 to 2049
+  AM or PM Meridian indicator
+  HH hours  12 hour format
+  HH24   24 hours format
+  MI minute
+  SS second
+
+
+
+
+
+SQL Lab 10
+
+ 1.convert below given number to format mentioned
+
+    67854        $67,894
+
+    785.94       $78,5.94
+
+2.convert and print current date in below formats 
+
+    JUN-23-22
+
+    23 JUNE 22  4:20:15
+
+3 Convert below given date as character text to date format
+
+  '23/12/2022'
+
+
+
+
+ Miscellaneous single row functions 
+
+
+  coalesce : This function returns the first not null value in the expression list 
+  decode:decode function compares an expression with search value one by one,if the 
+ expression does not match any of the search value ,then it return default value ,
+ if the default value is ommitted ,then it returns null
+
+
+  Greatest : returns greatest value from a list 
+  Least : returns least value from a list 
+
+  NVL : NVL is used to check null values ,it returns expr2 if expr1 is null,otherwise
+ returns expr1
+   
+   nullif: null if compares expression 1 and expression 2 ,if they are equals then
+  returns null otherwise returns expression 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

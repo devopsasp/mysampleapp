@@ -1,0 +1,51 @@
+    HTML Lab 6 
+
+  For the below given text ,format the complete text using right logical and physical 
+ tags 
+   
+  Dear 
+    James,
+   I have recieved the letter of intent needed to furthur process the 
+  document ,kindly send receiver's details  at below address 
+   
+   23 new street 
+   Jackson square 
+   55 - house no 17 
+
+   Thanks and Regards
+
+  Erric Joe 
+
+
+  Requirements 
+  1.The new line and space should be preserved as given in the text 
+  2.Text should use teletyped tag for complete text 
+  3.address can be highlighted using address tag 
+
+
+ 
+
+
+
+HTML Lab 8
+
+ in the earlier lab ,login and registration form were created ,
+Create and index page ,
+Create a home page 
+Create a navigation bar on index page  and connect Home ,login and registration 
+ and display using iframe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

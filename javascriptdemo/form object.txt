@@ -1,0 +1,74 @@
+   Predefined global object 
+
+  window 
+
+   #window is the root object for BOM(Browser object model)
+   #window object represents browser window ,and is used to manipulate browser window
+
+  objects and functions available through window
+    1.document :- represents html document in browser
+    2.closed:-returns true when window is closed
+    3.console:-represents console of a browser
+    4.frames:-returns all window objects running in the window
+    5.history :- returns history object for window
+
+                 history.go(number)
+                 history.back()
+                 history.forward()
+    6.innerHeight:-returns height of window content area 
+    7.innerWidth:-returns width of window content area
+    8.Navigator 
+            #Geolocation object in navigator is used to retreive latitude and longitude 
+  coordinates of a device
+
+
+
+
+document object of window forms root of DOM(document object model)
+
+
+
+
+#document object is created when html document is loaded
+#document object is root node of html document
+#document object is available as a property in window object
+
+  document object properties ad methods
+ 
+  #body 
+  #cookie
+  #createElement()
+  #forms
+  #getElementById()
+  #getElementsByClassName()
+  #getElementsByTagName()
+  #Link
+  #Anchor
+
+
+
+
+
+
+ Form object in document
+   #HTML form object is associated with a form element in html document 
+    #Action :-sets or returns action attriubte in form
+    #Name :- sets or returns name attribute of form
+    #Method :-  sets or returns method attribute of form
+    #NoValidate :-sets or return if form data should be validated 
+    #Target :- sets or return target attribute value of the form
+
+  reset :-Resets the form
+  submit:-submits the form 
+
+
+
+
+
+
+
+
+
+
+
+

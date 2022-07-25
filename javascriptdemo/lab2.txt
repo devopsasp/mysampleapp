@@ -1,0 +1,14 @@
+  HTML Lab - 7
+
+  Create an html page with form controls for below requirement 
+
+ 1.A registration page to accept following values 
+        User Name 
+        Email Id 
+        Password
+        Age 
+        address 
+        contact no 
+ 
+ 2.Create a login page to accept user name and password
+  the user name password should not be visible over url when submit is click

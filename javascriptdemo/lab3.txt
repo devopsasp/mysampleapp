@@ -1,0 +1,11 @@
+ JavaScript lab 1 
+
+   create an external java script file and display below values 
+using javascript files over document 
+
+
+ "Peter"
+ "23 old baker street"
+ 200
+ false
+

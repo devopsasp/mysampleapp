@@ -1,0 +1,68 @@
+     Sementic and non Sementic elements 
+
+
+ non sementic tags can contain any type of contents 
+
+   div tag is used to create a seperate division in a document
+
+ 
+
+
+  #div and span and any other sementic or non sementic tag can be stylized using 
+style attribute
+  
+  #style can be used with div or span to stylize specifi are 
+
+
+
+
+
+
+article defines independent self contained content
+
+aside : defines content that are other then main contents or indirectly related to 
+main contents 
+
+ details: defines additional details that a user can open or close on demand.details 
+  can be used along with summary tag 
+
+  figcaption and figure :are used to enclose an independent image and caption for image 
+
+
+  header and footer can be used to describe header and footer for a page or independent
+ section of page 
+
+ main contains the unique contents of the document specific to the document ,It should not contain common contents or elements like side bar or any navigation bar 
+
+mark tag is used to highlight contents in a statement 
+
+nav tag is used to contain navigation links 
+
+section tag is used to divide document in seperate sections 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

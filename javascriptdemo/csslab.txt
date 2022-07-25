@@ -1,0 +1,10 @@
+  CSS Lab 1 
+
+   apply the below given style over a paragraph using class 
+selector
+
+    background-color:green;
+    color:red;
+    font-size:23px;
+    width:90px;
+    height:90px;

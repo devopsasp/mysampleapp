@@ -1,0 +1,9 @@
+<input type='date'  value="2022-06-25" min="2022-06-15" max="2022-06-30"/>
+
+ <input type='email'  name="emailid"/>
+
+
+  <input type="number" name="mynum" min="0" max="10"/>
+ 
+
+ <input type="range" name="volume" min="0" max="100" value="30" />

@@ -1,0 +1,84 @@
+    Java Script lab - 2 
+
+   for the string 
+
+   "Peter Parker is a confused kid"
+
+
+   Perform below operations 
+  1.concat with text 
+          "He has to focus more on studies"
+
+  2.slice from char 3 to 7
+
+  4.Use split with space to seperate and print each character
+
+  5.Print the text in upper case 
+   
+  6.Use search to search for text 'er'
+
+  7.Replace Peter with John
+
+
+ javascript lab 3 
+
+    Create an object named coffee with below attributes and values 
+
+  coffeeName : "Espresso"
+
+  price : 35
+
+  available : true
+
+  quantity : 10
+
+#  Access and display all the properties 
+
+ # add a new property 
+            type:"Regular"
+  
+#delete property available
+
+#modify quantity to 15
+
+ 
+
+
+   
+
+javascript lab 4  10 mins
+
+  #create a function to calculate simpleintrest 
+  #return result from the function using return statement and print the result 
+
+
+javascript lab 5 15 mins 
+
+   write a program to accept marks from prompt and calculate grade and display grade 
+
+ for below given condition 
+   
+     marks >= 90   A 
+     marks >= 70   B
+     marks >= 50   C
+     marks >= 40   D 
+     marks < 40    FAIL 
+      
+ 
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  

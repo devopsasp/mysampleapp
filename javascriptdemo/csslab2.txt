@@ -1,0 +1,9 @@
+ css lab 2 
+  
+   Create an article for fruits ,and apply below given style using css 
+
+ 1.article should have a border 
+2.Heading should be stylized using text properties 
+3.font size for article should be 20 px 
+4.font family should be courier
+5.image should enclosed  in div with border  
